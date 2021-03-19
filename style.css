@@ -1,0 +1,15 @@
+#chessContainer {
+    width: 500px;
+    height: 500px;
+    border: 1px solid #a1cfe7;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+@media(max-width: 768px) {
+    #chessContainer {
+        width: 270px;
+        height: 270px;
+    }
+}
