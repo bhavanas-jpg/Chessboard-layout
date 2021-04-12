@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+}
+
+.board{
+    position: absolute;
+    top: 47%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #000;
+    height: 610px;
+    width: 610px;
+}
+
+.square{
+    height: 75px;
+    width: 75px;
+}
+
+.black{
+    background: #000;
+}
+
+.white{
+    background: #fff;
+}
+
+@media(max-width: 768px) {
+    .board {
+        width: 282px;
+        height: 282px;
+    }
+    .square{
+        height: 35px;
+        width: 35px;
+    }
+    
+}
